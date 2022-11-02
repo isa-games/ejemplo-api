@@ -7,6 +7,10 @@ app.get("/", (req, res)=>{
     res.send('Hola a todos')
 })
 
+app.get("/users", (req, res)=>{
+    res.send({name:"Juan"})
+})
+
 
 app.listen(port, ()=>{
     console.log('Servers tarted!')
